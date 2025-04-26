@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
@@ -7,64 +6,37 @@ import { ExternalLink, Github } from "lucide-react";
 const allProjects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "A full-featured online store with cart, checkout, and payment processing",
-    tags: ["React", "Node.js", "MongoDB"],
-    category: "Web Application",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80",
-    github: "https://github.com/yourusername/project-one",
-    live: "https://project-one.com",
+    title: "Prediction of Bank Loan Status",
+    description: "Developed predictive models for bank loan approval outcomes using K-Nearest Neighbors, Support Vector Classifier, Decision Tree, and Voting Classifier. Conducted extensive experimentation to compare model performances, where the Voting Classifier yielded the highest accuracy through an ensemble approach. Demonstrated how combining multiple classifiers can enhance prediction reliability in real-world finance applications.",
+    tags: ["Python", "Scikit-Learn", "Ensemble Methods"],
+    category: "Machine Learning",
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=700&q=80",
+    github: "https://github.com/Raj3049", // Placeholder
+    live: "",
+    period: "Jan 2024 - Apr 2024"
   },
   {
     id: 2,
-    title: "Portfolio Website",
-    description: "Modern responsive portfolio showcasing work and skills",
-    tags: ["React", "TypeScript", "Tailwind"],
-    category: "Web Design",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80",
-    github: "https://github.com/yourusername/project-two",
-    live: "https://project-two.com",
+    title: "Sentiment Analysis on IMDb Reviews",
+    description: "Developed a sentiment analysis model to classify IMDb movie reviews as positive or negative using Logistic Regression, Naïve Bayes, and LSTM. Implemented data preprocessing techniques such as tokenization, stopword removal, and vectorization to enhance model accuracy. Compared the performance of traditional machine learning models with deep learning approaches, demonstrating LSTM's capability in handling sequential text data.",
+    tags: ["Python", "NLTK", "TensorFlow"],
+    category: "Natural Language Processing",
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=700&q=80",
+    github: "https://github.com/Raj3049", // Placeholder
+    live: "",
+    period: "Jul 2024 - Sep 2024"
   },
   {
     id: 3,
-    title: "Task Management App",
-    description: "Collaborative project management tool with real-time updates",
-    tags: ["React", "Firebase", "Material UI"],
-    category: "Web Application",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80",
-    github: "https://github.com/yourusername/project-three",
-    live: "https://project-three.com",
-  },
-  {
-    id: 4,
-    title: "Weather Dashboard",
-    description: "Real-time weather application with location tracking",
-    tags: ["JavaScript", "API Integration", "CSS"],
-    category: "Web Application",
-    image: "https://images.unsplash.com/photo-1492321936769-b49830bc1d1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80",
-    github: "https://github.com/yourusername/project-four",
-    live: "https://project-four.com",
-  },
-  {
-    id: 5,
-    title: "Restaurant Website",
-    description: "Elegant website for a local restaurant with online ordering",
-    tags: ["HTML", "CSS", "JavaScript"],
-    category: "Web Design",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80",
-    github: "https://github.com/yourusername/project-five",
-    live: "https://project-five.com",
-  },
-  {
-    id: 6,
-    title: "Budget Tracker",
-    description: "Personal finance application with visualization and insights",
-    tags: ["React", "Node.js", "Chart.js"],
-    category: "Web Application",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80",
-    github: "https://github.com/yourusername/project-six",
-    live: "https://project-six.com",
-  },
+    title: "Book Recommendation System",
+    description: "Designed and implemented a multi-approach recommendation system leveraging Nearest Neighbors, KMeans, and Agglomerative Clustering to enhance recommendation accuracy. Integrated an NLP-based approach by extracting features from book descriptions and reviews, then computing similarities using cosine similarity. Delivered a robust, context-aware recommendation platform that adapts to diverse user preferences and dynamic content.",
+    tags: ["Python", "Scikit-Learn", "NLP"],
+    category: "Recommendation System",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80",
+    github: "https://github.com/Raj3049", // Placeholder
+    live: "",
+    period: "Oct 2024 - Dec 2024"
+  }
 ];
 
 // Extract unique categories and technologies

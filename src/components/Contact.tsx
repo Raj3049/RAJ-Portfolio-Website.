@@ -1,7 +1,6 @@
-
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, Twitter, Instagram, MapPin, Send } from "lucide-react";
+import { Mail, Github, Linkedin, MapPin, Send } from "lucide-react";
 
 export const Contact = () => {
   const [formState, setFormState] = useState({
@@ -48,11 +47,9 @@ export const Contact = () => {
   const inputClasses = "w-full bg-card border border-muted rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary/50 text-foreground";
   
   const socialLinks = [
-    { name: "Email", icon: Mail, url: "mailto:your.email@example.com" },
-    { name: "GitHub", icon: Github, url: "https://github.com/yourusername" },
-    { name: "LinkedIn", icon: Linkedin, url: "https://linkedin.com/in/yourusername" },
-    { name: "Twitter", icon: Twitter, url: "https://twitter.com/yourusername" },
-    { name: "Instagram", icon: Instagram, url: "https://instagram.com/yourusername" }
+    { name: "Email", icon: Mail, url: "mailto:rajsinghbisht304@gmail.com" },
+    { name: "GitHub", icon: Github, url: "https://github.com/Raj3049" },
+    { name: "LinkedIn", icon: Linkedin, url: "https://linkedin.com/in/raj-singh-150957250" }
   ];
 
   return (
@@ -192,11 +189,11 @@ export const Contact = () => {
               <div className="w-full h-full relative">
                 <div className="absolute top-4 left-4 z-10 flex items-center gap-2 bg-background/80 backdrop-blur-sm px-3 py-2 rounded-full">
                   <MapPin size={16} className="text-primary" />
-                  <span className="text-sm">New York City, NY</span>
+                  <span className="text-sm">Ambala, Haryana 133003</span>
                 </div>
                 <iframe
                   title="Location Map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830894616!2d-74.11976383064448!3d40.69766374873451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1612319118281!5m2!1sen!2s"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.013073289889!2d76.7821!3d30.3752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3910287e5e2e2e2b%3A0x6e2e2e2e2e2e2e2e!2sAmbala%2C%20Haryana%20133003%2C%20India!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   frameBorder="0"

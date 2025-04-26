@@ -1,18 +1,17 @@
-
 import { motion } from "framer-motion";
-import { Code, Server, Figma, Database, GitBranch, Globe } from "lucide-react";
+import { Database, Code, BarChart2 } from "lucide-react";
 
 const skills = [
-  { name: "JavaScript", icon: Code },
-  { name: "TypeScript", icon: Code },
-  { name: "React", icon: Code },
-  { name: "Node.js", icon: Server },
-  { name: "Next.js", icon: Code },
-  { name: "Tailwind CSS", icon: Figma },
-  { name: "GraphQL", icon: Database },
-  { name: "PostgreSQL", icon: Database },
-  { name: "Git", icon: GitBranch },
-  { name: "Responsive Design", icon: Globe },
+  { name: "Java", icon: Code },
+  { name: "Python", icon: Code },
+  { name: "Scikit-Learn", icon: Database },
+  { name: "TensorFlow", icon: Database },
+  { name: "LSTM", icon: Database },
+  { name: "TF-IDF", icon: Database },
+  { name: "Voting Classifier", icon: Database },
+  { name: "Pandas", icon: BarChart2 },
+  { name: "Seaborn", icon: BarChart2 },
+  { name: "Matplotlib", icon: BarChart2 },
 ];
 
 const values = [
@@ -72,7 +71,7 @@ export const About = () => {
           >
             <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden mx-auto md:mx-0 border-4 border-primary/20">
               <img
-                src="https://github.com/yourusername.png"
+                src="https://github.com/Raj3049.png"
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
@@ -87,16 +86,10 @@ export const About = () => {
             className="col-span-1 md:col-span-2 space-y-6 text-lg text-secondary-foreground"
           >
             <p>
-              I'm a passionate full-stack developer with a focus on creating intuitive
-              and performant web applications. With years of experience in modern web
-              technologies, I enjoy turning complex problems into simple, beautiful
-              solutions.
+              I am a passionate Machine Learning and Data Science enthusiast with hands-on experience in predictive modeling, natural language processing, and recommendation systems. I enjoy building robust solutions that solve real-world problems using modern data science tools and techniques.
             </p>
             <p>
-              My journey in tech began with a curiosity about how things work,
-              which led me to pursue formal education in computer science. Since then,
-              I've worked on a variety of projects, from small business websites to
-              complex enterprise applications.
+              My expertise includes developing predictive models, performing sentiment analysis, and designing recommendation systems using Python, Scikit-Learn, TensorFlow, and related technologies. I am always eager to learn and apply new methods to extract insights from data.
             </p>
           </motion.div>
         </div>
@@ -108,7 +101,7 @@ export const About = () => {
             viewport={{ once: true }}
             className="text-xl font-semibold mb-6 text-foreground text-center"
           >
-            Skills & Technologies
+            Technical Skills
           </motion.h3>
           
           <motion.div 

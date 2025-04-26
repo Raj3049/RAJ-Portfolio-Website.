@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Github, Linkedin, Twitter, Instagram, ArrowUp } from "lucide-react";
 
@@ -11,10 +10,8 @@ export const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: Github, url: "https://github.com/yourusername" },
-    { icon: Linkedin, url: "https://linkedin.com/in/yourusername" },
-    { icon: Twitter, url: "https://twitter.com/yourusername" },
-    { icon: Instagram, url: "https://instagram.com/yourusername" },
+    { icon: Github, url: "https://github.com/Raj3049" },
+    { icon: Linkedin, url: "https://linkedin.com/in/raj-singh-150957250" },
   ];
   
   return (
@@ -28,7 +25,7 @@ export const Footer = () => {
             className="mb-6 md:mb-0"
           >
             <a href="#" className="text-2xl font-bold gradient-text">YD</a>
-            <p className="text-muted-foreground mt-2">Crafting digital experiences</p>
+            <p className="text-muted-foreground mt-2">Raj Singh Bisht</p>
           </motion.div>
           
           <motion.div 
@@ -55,7 +52,7 @@ export const Footer = () => {
         
         <div className="mt-8 pt-8 border-t border-muted flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Raj Singh Bisht. All rights reserved.
           </p>
           
           <motion.button
